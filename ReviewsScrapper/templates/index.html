@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block head %}
+    <title>Home</title>
+{% endblock head %}
+{% block body %}
+    <div class="jumbotron jumbotron-fluid bg-dark text-light">
+      <div class="container">
+        <h1 class="display-4">Product Reviews</h1>
+        <p class="lead">This is a web scrapper which returns the reviews .</p>
+      </div>
+    </div>
+
+  <section>
+
+    <div class="container">
+      <form class="form-inline" action="/review" method="post">
+        <div class="form-group mx-sm-3 mb-2">
+
+          <input type="text" class="form-control col-xs-4" name="content" id="content" placeholder="Product Name" autocomplete="off">
+
+
+        </div>
+        <button type="submit" class="btn btn-primary mb-2 mx-2">Search</button>
+      </form>
+    </div>
+  </section>
+
+{% endblock body %}

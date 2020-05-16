@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block head %}
+    <title>Page Not Available</title>
+{% endblock head %}
+
+{% block body %}
+    <div class="jumbotron jumbotron-fluid bg-dark text-light">
+      <div class="container">
+        <h1 class="display-4">Sorry!</h1>
+        <p class="lead">Information is not available at the moment</p>
+	  	<a href="/" class="btn btn-danger btn-lg">Search Again</a>
+        <h3>{{e}}</h3>
+      </div>
+    </div>
+
+
+{% endblock body %}
